@@ -1,0 +1,102 @@
+.custom-navbar {
+    background-color: #2B4D1B;
+    padding: 10px;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+#carouselExampleCaptions {
+    width: 100%;
+    height: 85vh;
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item img {
+    height: 100% !important;
+    object-fit: cover;
+}
+.vision-banner {
+    background-color: #2B4D1B; 
+    padding-bottom: 0px;
+}
+.vision-1 {
+    background-color: #293B21;
+}
+.vision-banner{
+        font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.vision-1{
+        text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.vision-1 .banner-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+/* Focus Areas Section Background Image Styling */
+.focus-areas-section {
+    background: url('../images/bg1.webp') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Optional: Agar background image ke upar halka dark ya light tint chahiye taaki text aur cards saaf dikhein */
+.focus-areas-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* इससे background thoda light white ho jayega, agar dark chahiye toh color badal sakte hain */
+    z-index: 1;
+}
+
+/* Taaki content background ke upar dikhe */
+.focus-areas-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Card Heights */
+.focus-card.large-card {
+    height: 420px;
+}
+
+.focus-card.small-card {
+    height: 195px;
+}
+
+/* Image Fit & Hover Effect */
+.focus-card img {
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.focus-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Dark Gradient Overlay over images for text readability */
+.gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+}
